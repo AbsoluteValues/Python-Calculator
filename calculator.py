@@ -68,10 +68,10 @@ def calculate(x, operator, y) :
     else :
         return "지원하지 않는 연산자입니다."
 
-def printResult(result) :
-    print(f'결과 : {result}')
+def printResult(value) :
+    print(f'결과 : {value}')
 
-    print(f'분수 표현 : {Fraction(result).limit_denominator()}')
+    print(f'분수 표현 : {Fraction(value).limit_denominator()}')
 
 def main() :
     value = 0
@@ -118,10 +118,6 @@ def main() :
         
         if (operator != "=") :
             value = calculate(x, operator, y)
-
-        if (type(value) == str) :
-            print(value)
-            continue
 
         result = 0
         if (operator == "abs") :
