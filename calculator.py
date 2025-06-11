@@ -71,8 +71,7 @@ def calculate(x, operator, y) :
 def printResult(result) :
     print(f'결과 : {result}')
 
-    if (type(result) == float) :
-        print(f'분수 표현 : {Fraction(result).limit_denominator()}')
+    print(f'분수 표현 : {Fraction(result).limit_denominator()}')
 
 def main() :
     value = 0
